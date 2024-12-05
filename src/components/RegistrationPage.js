@@ -29,7 +29,7 @@ function RegistrationPage() {
 
         // Check if email already exists in database
         try {
-            const response = await axios.post('https://mern-project-api-amber.vercel.app/check-email', { email: value });
+            const response = await axios.post('https://mern-project-api-nu.vercel.app/check-email', { email: value });
             if (response.data.exists) {
                 setIsEmailExists(true);
                 setEmailError("Email already has an account. Please log in.");
