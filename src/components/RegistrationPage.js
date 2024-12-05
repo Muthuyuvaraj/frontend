@@ -61,7 +61,7 @@ function RegistrationPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!emailError && isPasswordValid && !isEmailExists) {
-            axios.post('http://localhost:3001/register', { name, email, password })
+            axios.post('https://mern-project-api-nu.vercel.app/register', { name, email, password })
                 .then(result => {
                     alert("Registration successful!");
                     navigate('/login');
