@@ -47,7 +47,7 @@ function Login() {
                             id="authEmailOrUsername"
                             placeholder="Enter your username or email"
                             required
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) => setEmail(e.target.value.toLowerCase())}
                         />
                     </div>
 
